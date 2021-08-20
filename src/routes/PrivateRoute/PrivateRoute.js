@@ -1,14 +1,18 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-import TokenService from "../../services/token-service";
+import { useSelector } from "react-redux";
+import { selectUser } from "../../features/user/userSlice";
 
 const PrivateRoute = ({ component, ...props }) => {
   const Component = component;
+
+  const user = useSelector(selectUser);
+
   return (
     <Route
       {...props}
       render={(componentProps) =>
-        TokenService.hasAuthToken() ? (
+        user ? (
           <Component {...componentProps} />
         ) : (
           <Redirect

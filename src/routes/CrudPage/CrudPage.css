@@ -5,13 +5,27 @@
   
 }
 .tasks__container{
-  background: #525252;
+  background: #16161a;
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.to__do__task__title{
+  margin: 0;
+  display: flex;
 }
 .task__container__title{
   display: flex;
-  border: 1px solid white;
-  border-radius: 5px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  background: #1f2028;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 40px;
+}
+.task__container__title:hover{
+ background: #353747;
 }

@@ -1,10 +1,18 @@
 import jwtDecode from "jwt-decode";
 import config from "../config";
+import axios from "axios";
 
 let _timeoutId;
 const _TEN_SECONDS_IN_MS = 10000;
 
 const TokenService = {
+
+  postLogin(email, password){
+    return axios.post(config.AUTH_ENDPOINT, {
+      email, password
+    })
+  },
+
   saveAuthToken(token) {
     window.sessionStorage.setItem(config.TOKEN_KEY, token);
   },

@@ -1,0 +1,33 @@
+.login__page__container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.login__form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.login__input{
+    width: 90%;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding: 8px 0;
+    font-size: 16px;
+    background: transparent;
+}
+.login__header__container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
