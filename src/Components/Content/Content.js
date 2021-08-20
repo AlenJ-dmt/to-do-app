@@ -1,6 +1,6 @@
 import React from "react";
 import "./Content.css";
-import { Switch, Route } from "react-router-dom";
+import { Switch } from "react-router-dom";
 import HomePage from "../../routes/HomePage/HomePage";
 import CrudPage from "../../routes/CrudPage/CrudPAge";
 import PrivateRoute from "../../routes/PrivateRoute/PrivateRoute";

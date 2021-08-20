@@ -3,7 +3,7 @@ import { useParams, useHistory } from "react-router";
 import CrudApiService from "../../services/crud-api-services";
 import ReactLoading from "react-loading";
 import "./DetailPage.css";
-import { AiFillEdit, AiOutlineCheck, AiFillDelete } from "react-icons/ai";
+import { AiFillEdit, AiFillDelete } from "react-icons/ai";
 import { ImCheckmark } from "react-icons/im";
 
 const DetailPage = () => {
@@ -20,7 +20,6 @@ const DetailPage = () => {
   const loadTaskInformation = () => {
     setIsLoading(true);
     CrudApiService.getTaskById(taskId).then((response) => {
-      console.log(response);
       setTitle(response.data.title);
       setImportance(response.data.importance);
       setFrequency(response.data.frequency);

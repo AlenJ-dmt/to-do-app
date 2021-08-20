@@ -5,8 +5,6 @@ import { useHistory, useLocation, Link } from "react-router-dom";
 
 import { IoHomeOutline, IoHome } from "react-icons/io5";
 import { BsPlusSquareFill, BsPlusSquare } from "react-icons/bs";
-import { RiSearchEyeLine, RiSearchEyeFill } from "react-icons/ri";
-import { AiOutlineSetting, AiFillSetting } from "react-icons/ai";
 import { RiFileListLine, RiFileListFill } from "react-icons/ri";
 
 const SideBar = () => {

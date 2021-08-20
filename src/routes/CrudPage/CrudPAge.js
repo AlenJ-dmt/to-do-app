@@ -13,7 +13,7 @@ const CrudPage = () => {
 
   const populateList = () => {
     return taskList.map((task) => 
-      <div onClick={() => history.push(`/details/${task._id}`)} className="task__container__title">
+      <div key={task._id} onClick={() => history.push(`/details/${task._id}`)} className="task__container__title">
         <p className="to__do__task__title" style={{ color: "#fff" }}>{task.title}</p>
       </div>
     );

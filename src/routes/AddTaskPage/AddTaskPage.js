@@ -19,7 +19,6 @@ const AddTaskPage = () => {
 
   const loadValues = () => {
     CrudApiService.getTaskById(taskId).then((response) => {
-      console.log(response);
       setTitle(response.data.title);
       setImportance(response.data.importance);
       if (response.data.frequency !== "once") {
@@ -31,14 +30,14 @@ const AddTaskPage = () => {
     });
   };
 
-  const [title, setTitle] = useState(null);
-  const [importance, setImportance] = useState(null);
+  const [title, setTitle] = useState("");
+  const [importance, setImportance] = useState("");
   const [frequency, setFrequency] = useState("once");
-  const [category, setCategory] = useState(null);
+  const [category, setCategory] = useState("");
   const [isRepetitive, setIsRepetitive] = useState(false);
   const [err, setErr] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [errMsg, setErrMsg] = useState(null);
+  const [errMsg, setErrMsg] = useState("");
 
   const createNewTask = (ev) => {
     ev.preventDefault();
