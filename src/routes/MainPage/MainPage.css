@@ -1,0 +1,12 @@
+.main__page__container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.main__app__side__menu__container {
+  position: fixed;
+  width: 350px;
+  top: 50px;
+  left: 0;
+  z-index: 5;
+}

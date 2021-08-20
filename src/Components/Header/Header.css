@@ -1,0 +1,20 @@
+.top__bar__container {
+  width: 100%;
+  height: 50px;
+  background-color: #242526;
+  display: flex;
+  border-bottom: 1px solid #525252;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.top__bar__logout {
+  color: #e4e6eb;
+  margin-right: 15px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+.top__bar__logout:hover {
+  color: #525252;
+}

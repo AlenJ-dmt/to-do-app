@@ -1,0 +1,43 @@
+.side__menu__container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  width: 350px;
+  background-color: #242526;
+  border-right: 1px solid #525252;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.side__menu__option__container {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  text-align: left;
+  align-items: center;
+  margin-top: 15px;
+  padding: 12px 8px;
+}
+.side__menu__option__container:hover {
+  background-color: #3a3b3c;
+  cursor: pointer;
+}
+.side__menu__title {
+  text-align: left;
+  color: #e4e6eb;
+}
+.side__menu__link {
+  text-decoration: none;
+  color: #e4e6eb;
+  font-weight: 600;
+  font-size: 15px;
+}
+.side__menu__icon__container {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
